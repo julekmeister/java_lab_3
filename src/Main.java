@@ -23,14 +23,25 @@ public class Main {
         int L;
         while(true)
         {
-            System.out.println("Podaj liczbę:\n");
+            System.out.println("\nPodaj liczbę:\n");
             L= sc.nextInt();
-            if (L==0)
-                break;
-            switch(L){
-                case 1:
-                    System.out.println(LiczbyEnum.jeden);
+
+
+            switch (L) {
+                case 1 -> System.out.println(LiczbyEnum.jeden);
+                case 2 -> System.out.println(LiczbyEnum.dwa);
+                case 3 -> System.out.println(LiczbyEnum.trzy);
+                case 4 -> System.out.println(LiczbyEnum.cztery);
+                case 5 -> System.out.println(LiczbyEnum.pięć);
+                case 6 -> System.out.println(LiczbyEnum.sześć);
             }
+            if(L==0){
+                System.out.println(StatusEnum.KONIEC);
+                break;
+            }
+            else
+                System.out.println(StatusEnum.KONTYNUUJEMY);
+
         }
 
     }
