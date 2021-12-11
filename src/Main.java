@@ -30,7 +30,7 @@ public class Main {
         s2.zal=true;
 
         s3.imie = "Adam";
-        s3.nazwisko="Nowakowski";
+        s3.nazwisko="Nowak";
         s3.index=1231;
         s3.zal=false;
 
@@ -43,13 +43,23 @@ public class Main {
         tab[0]=s2;
         tab[2]=s3;
 
-        System.out.print("Imię\t\tNazwisko\t\tIndeks\t\tCzy zaliczona sesja\n");
+        System.out.format("%-32s%-32s%-32s%-32s", "Imię", "Nazwisko", "Indeks", "Sesja");
+        //System.out.print("Imię\t\tNazwisko\t\tIndeks\t\tCzy zaliczona sesja\n");
         for (student i:tab
              ) {
-            System.out.print(i.imie+"\t\t" +i.nazwisko+"\t\t"+i.index+"\t\t"+i.zal+"\t\t\n");
+            System.out.format("\n%-32s%-32s%-32s%-32s",i.imie,i.nazwisko,i.index, Zaliczenie(i.zal));
             //System.out.println("Imię: "+i.imie+"\nNazwisko: "+i.nazwisko+"\nNr indeksu: "+i.nazwisko+"\nCzy sesja zaliczona: "+i.zal+"\n");
         }
 
 
     }
+    public static String Zaliczenie (boolean zal){
+        String z;
+        if (zal)
+            z= "Zaliczono";
+
+        else z= "Nie zaliczono";
+        return z;
+    }
+
 }
