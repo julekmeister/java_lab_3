@@ -24,7 +24,7 @@ public class Main {
         s1.index=1238;
         s1.zal=true;
 
-        s2.imie = "Janek";
+        s2.imie = "Jan";
         s2.nazwisko="Kowalski";
         s2.index=1233;
         s2.zal=true;
@@ -43,11 +43,14 @@ public class Main {
         tab[0]=s2;
         tab[2]=s3;
 
-        System.out.format("%-32s%-32s%-32s%-32s", "Imię", "Nazwisko", "Indeks", "Sesja");
+        System.out.format("%-30s%-30s%-30s%-30s", "Imię", "Nazwisko", "Indeks", "Sesja");
+        System.out.println();
+        for (int k=1;k<105;++k)
+            System.out.print("-");
         //System.out.print("Imię\t\tNazwisko\t\tIndeks\t\tCzy zaliczona sesja\n");
         for (student i:tab
              ) {
-            System.out.format("\n%-32s%-32s%-32s%-32s",i.imie,i.nazwisko,i.index, Zaliczenie(i.zal));
+            System.out.format("\n%-30s%-30s%-30s%-30s",i.imie,i.nazwisko,i.index, Zaliczenie(i.zal));
             //System.out.println("Imię: "+i.imie+"\nNazwisko: "+i.nazwisko+"\nNr indeksu: "+i.nazwisko+"\nCzy sesja zaliczona: "+i.zal+"\n");
         }
 
@@ -57,7 +60,6 @@ public class Main {
         String z;
         if (zal)
             z= "Zaliczono";
-
         else z= "Nie zaliczono";
         return z;
     }
