@@ -34,27 +34,21 @@ public class Main {
         s3.index=1231;
         s3.zal=false;
 
-
-
-
         student[] tab = new student[3];
 
-        tab[1]=s1;
-        tab[0]=s2;
+        tab[0]=s1;
+        tab[1]=s2;
         tab[2]=s3;
 
         System.out.format("%-30s%-30s%-30s%-30s", "Imię", "Nazwisko", "Indeks", "Sesja");
         System.out.println();
         for (int k=1;k<105;++k)
             System.out.print("-");
-        //System.out.print("Imię\t\tNazwisko\t\tIndeks\t\tCzy zaliczona sesja\n");
+
         for (student i:tab
              ) {
             System.out.format("\n%-30s%-30s%-30s%-30s",i.imie,i.nazwisko,i.index, Zaliczenie(i.zal));
-            //System.out.println("Imię: "+i.imie+"\nNazwisko: "+i.nazwisko+"\nNr indeksu: "+i.nazwisko+"\nCzy sesja zaliczona: "+i.zal+"\n");
         }
-
-
     }
     public static String Zaliczenie (boolean zal){
         String z;
