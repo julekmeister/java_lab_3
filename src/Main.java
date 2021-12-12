@@ -1,11 +1,7 @@
-import java.io.PrintStream;
-import java.util.ArrayList;
-import java.util.List;
-import java.util.Scanner;
-
 public class Main {
 
     public static void main(String[] args) {
+
 
         /* ćw 2 klasy */
         /* zad.1
@@ -49,6 +45,7 @@ public class Main {
              ) {
             System.out.format("\n%-30s%-30s%-30s%-30s",i.imie,i.nazwisko,i.index, Zaliczenie(i.zal));
         }
+
     }
     public static String Zaliczenie (boolean zal){
         String z;
