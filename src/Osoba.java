@@ -39,4 +39,11 @@ public class Osoba {
         System.out.println("Index: " +index);
 
     }
+
+    @Override
+    public String toString() {
+        return  "imie='" + imie + '\'' +
+                ", nazwisko='" + nazwisko + '\'' +
+                ", index=" + index;
+    }
 }
