@@ -19,5 +19,7 @@ public class Main {
             e) wywołać metody suma i róznica (obie wersje) z klasy punkt
         */
 
+        System.out.println();
+
     }
 }
