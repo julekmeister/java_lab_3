@@ -61,22 +61,23 @@ public class Punkt {
         d) nadpisać metodę toString(), aby zwracała wszystkie wartości pól, analogicznie jak w przykładzie
      */
 
-    private int suma(int x, int y, int z){
+    public int suma(){
         return pX+pY+pZ;
     }
-    private int  różnica(){
+    public int  różnica(){
         return pX - pY - pZ;
     }
 
-    private int różnica(int x, int y, int z){
+    public int różnica(int x, int y, int z){
         return pX*x - pY*y - pZ*z;
     }
     @Override
     public String toString() {
-        return "Punkt{" +
+        return  "Punkt{" +
                 "x=" + pX +
                 ", y=" + pY +
                 ", z=" + pZ +
                 '}';
+
     }
 }
