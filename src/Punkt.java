@@ -64,11 +64,19 @@ public class Punkt {
     private int suma(int x, int y, int z){
         return pX+pY+pZ;
     }
-    public int  różnica(){
+    private int  różnica(){
         return pX - pY - pZ;
     }
 
     private int różnica(int x, int y, int z){
         return pX*x - pY*y - pZ*z;
+    }
+    @Override
+    public String toString() {
+        return "Punkt{" +
+                "x=" + pX +
+                ", y=" + pY +
+                ", z=" + pZ +
+                '}';
     }
 }
