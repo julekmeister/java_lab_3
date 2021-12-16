@@ -13,6 +13,7 @@ public class Main {
             c) napisać metodę w klasie Osoba która zwróci informację o osobie,
          */
 
+
         /* zad.2
             a) Stworzyć klasę Student z polami prywatnymi
             - Osoba osoba,
