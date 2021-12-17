@@ -34,7 +34,7 @@ public class Xmen extends Mutant{
                 "imie='" + imie + '\'' +
                 ", nazwisko='" + nazwisko + '\'' +
                 ", codename='" + codename + '\'' +
-                ", powerLevel=" + powerLevel +
+                ", poziom mocy=" + powerLevel +
                 '}';
     }
 }
