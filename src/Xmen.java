@@ -30,7 +30,7 @@ public class Xmen extends Mutant{
 
     @Override
     public String toString() {
-        return "Xmen{" +
+        return "X-Man: {" +
                 "imie='" + imie + '\'' +
                 ", nazwisko='" + nazwisko + '\'' +
                 ", codename='" + codename + '\'' +

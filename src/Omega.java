@@ -42,6 +42,11 @@ public class Omega extends Xmen{
     }
 
     @Override
+    protected int calcPower() {
+        return super.calcPower()+powerM;
+    }
+
+    @Override
     public String toString() {
         return "Omega: {" +
                 "imie='" + imie + '\'' +
